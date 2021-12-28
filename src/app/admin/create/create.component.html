@@ -1,0 +1,19 @@
+<div class="container">
+  <form *ngIf="formAddlink" [formGroup]="formAddlink" (ngSubmit)="submit()" >
+    <div class="form-group">
+      <label>Tag</label>
+      <input type="text" class="form-control" formControlName="tag">
+    </div>
+    <div class="form-group">
+      <label>Url</label>
+      <input type="url" class="form-control" formControlName="url">
+    </div>
+    <div class="form-group">
+      <label>Descriptions</label>
+      <input type="text" class="form-control" formControlName="descriptions">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
